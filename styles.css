@@ -19,6 +19,7 @@ header{
     height: 50px;
     background-color: #222;
 }
+
 nav{
     flex-direction: column;
 }
@@ -151,7 +152,7 @@ main{
 .Description li ul li{
     display: inline-block;
     vertical-align: middle;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .Description li ul li img{
     margin-right: 10px;
@@ -164,4 +165,72 @@ main{
 }
 .padding{
     padding: 0px;
+}
+
+@media (max-width : 1000px) {
+    .Description li ul li{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 18px;
+    }    
+    .Description li ul li img{
+        margin-right: 10px;
+        width: 35px;
+    }
+
+
+}
+
+@media (max-width : 900px) {
+    .Description li ul li{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 10px;
+    }    
+    .Description li ul li img{
+        display: none;
+    }
+    .container:nth-child(2){
+        width: 80%;
+
+    }
+    header{
+        align-items:center;   
+    }
+
+    .Description li ul li{
+       display: flex;
+       font-size: 15px;
+    }
+    .container:nth-child(1){
+        width: 45%;
+    }
+    .container:nth-child(2){
+        width: 55%;
+    }
+}
+
+@media (max-width : 700px) {
+    header nav{
+       display: none;
+    }
+ 
+    .icon-menu{
+        visibility: true;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }   
+    .container:nth-child(1){
+        width: 100%;
+        height: 50%;
+    }
+
+    .container:nth-child(2){
+        width: 100%;
+        height: 50%;
+    }
+
 }
