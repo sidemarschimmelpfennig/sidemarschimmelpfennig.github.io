@@ -3,8 +3,13 @@
     "photo": "https://avatars.githubusercontent.com/u/90000000?v=4",
     "job": "Developer Delphi - CoffCode",
     "location": "Arabutã - SC",
-    "phone": "(16) 99816-4594",
-    "email": "sidemarschimmelpfennig@outlook.com",
+    "phone": "(49) 99816-4594",
+    "email": [{
+    "name":"sidemarschimmelpfennig@outlook.com",
+    "href" :"mailto:sidemarschimmelpfennig@outlook.com"
+    }
+    ] ,
+
     "skills": {
       "hardSkills": [
         {
