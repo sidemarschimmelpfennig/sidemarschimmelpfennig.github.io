@@ -21,7 +21,7 @@ const profileInformation = (profileData) =>{
     phone.innerHTML = profileData.phone
 
     const email = document.getElementById('profile-email')
-    email.innerHTML = profileData.email
+    email.innerHTML = profileData.email[name]
     email.href = `mailto:${profileData.email}`
 }
 

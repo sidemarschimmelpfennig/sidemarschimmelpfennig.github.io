@@ -4,11 +4,11 @@
     "job": "Developer Delphi - CoffCode",
     "location": "Arabutã - SC",
     "phone": "(49) 99816-4594",
-    "email": [{
+    "email": {
     "name":"sidemarschimmelpfennig@outlook.com",
     "href" :"mailto:sidemarschimmelpfennig@outlook.com"
     }
-    ] ,
+     ,
 
     "skills": {
       "hardSkills": [
