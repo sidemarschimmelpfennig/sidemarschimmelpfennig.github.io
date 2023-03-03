@@ -50,7 +50,7 @@ const profileProjects = (profileData) =>{
 
 const profileProfessional = (profileData) =>{
     const Professional = document.getElementById('profile-Professional')
-    Professional.innerHTML = profileData.profissionalExperience.map(professiona => {
+    Professional.innerHTML = profileData.professionalExperience.map(professiona => {
         return`
         <li>  
             <h3 class="title">${professiona.name}</h3>
