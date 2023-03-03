@@ -61,15 +61,27 @@
     ],
     "portfolio": [
       {
-        "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-        "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+        "name": "Repositorio Projetos em ReactJs",
+        "url": "https://github.com/sidemarschimmelpfennig/Projetos_reactJs",
         "github": true
       },
       {
-        "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-        "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+        "name": "Repositorio Projetos em Vue",
+        "url": "https://github.com/sidemarschimmelpfennig/Projetos_Vue",
+        "github": true
+      },
+      {
+        "name": "Delphi Project",
+        "url": "https://github.com/sidemarschimmelpfennig/DELPHI_Projects",
+        "github": true
+      },
+      {
+        "name": "Database_experiencie-Dio",
+        "url": "https://github.com/sidemarschimmelpfennig/Database-Experience-Dio-Bootcamp-sidemar.git",
         "github": true
       }
+
+
     ],
     "professionalExperience": [
       {
