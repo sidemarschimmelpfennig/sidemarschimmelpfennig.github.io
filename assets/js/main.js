@@ -19,6 +19,9 @@ const profileInformation = (profileData) =>{
     const email = document.getElementById('profile-email')
     email.innerHTML = profileData.email.name
     email.href = profileData.email.href
+
+    const Curriculo = document.getElementById('download')
+    Curriculo.href = profileData.linkcur
 }
 const profileSoftSkills = (profileData) =>{
     const softSkills = document.getElementById('profile-Soft')

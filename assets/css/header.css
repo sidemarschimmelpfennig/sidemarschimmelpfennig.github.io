@@ -4,6 +4,28 @@
     align-items: center;
     position: relative;
 }
+.header .download p{
+    display: inline-block;
+    position: absolute;
+    max-width: 100px;
+    flex-wrap: wrap;
+    top: 2.5rem;
+    left: 1rem;
+
+}
+.header .download::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icons/download-cur.svg');
+}
+
 .header::after{
     content: '';
     display: inline-block;
@@ -16,6 +38,11 @@
     background-size: contain;
     background-image: url('../img/icons/header.svg');
 }
+
+
+
+
+
 .photo{
     width: 220px;
     height: 220px;
