@@ -9,16 +9,16 @@
     position: absolute;
     max-width: 100px;
     flex-wrap: wrap;
-    top: 2.5rem;
-    left: 1rem;
-
+    top: 2rem;
+    left: -.1rem;
+    font-size : 0.8rem;
 }
 .header .download::after {
     content: '';
     display: inline-block;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: .8rem;
+    left: 0.5rem;
     width: 2rem;
     height: 2rem;
     background-repeat: no-repeat;
