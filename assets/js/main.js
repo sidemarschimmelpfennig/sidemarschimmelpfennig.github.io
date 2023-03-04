@@ -62,7 +62,7 @@ const profileProfessional = (profileData) =>{
         `
     }
 
-    )
+    ).join('')
 }
 
 
