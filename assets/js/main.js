@@ -74,7 +74,6 @@ const profileProfessional = (profileData) =>{
 
 (async () => {
         const fetchProfile = await fetchProfileData()
-        console.log(fetchProfile)
         profileInformation(fetchProfile)
         profileHardSkills(fetchProfile)
         profileSoftSkills(fetchProfile)
