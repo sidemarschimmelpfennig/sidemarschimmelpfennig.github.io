@@ -62,23 +62,33 @@
     ],
     "portfolio": [
       {
-        "name": "Repositorio Projetos em ReactJs",
-        "url": "https://github.com/sidemarschimmelpfennig/Projetos_reactJs",
+        "name": "Projetos em ReactJs",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_js_and_frameworks/tree/main/react",
         "github": true
       },
       {
-        "name": "Repositorio Projetos em Vue",
-        "url": "https://github.com/sidemarschimmelpfennig/Projetos_Vue",
+        "name": "Projetos em Vue",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_js_and_frameworks/tree/main/vue",
         "github": true
       },
       {
-        "name": "Delphi Project",
-        "url": "https://github.com/sidemarschimmelpfennig/DELPHI_Projects",
+        "name": "Projetos em angular",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_js_and_frameworks/tree/main/angular",
         "github": true
       },
       {
-        "name": "Database_experiencie-Dio",
-        "url": "https://github.com/sidemarschimmelpfennig/Database-Experience-Dio-Bootcamp-sidemar.git",
+        "name": "Projetos em vanilla",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_js_and_frameworks/tree/main/vanilla",
+        "github": true
+      },
+    {
+        "name": "Projetos em node",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_js_and_frameworks/tree/main/node",
+        "github": true
+      },
+      {
+        "name": "Projetos em Delphi",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_delphi",
         "github": true
       }
 
