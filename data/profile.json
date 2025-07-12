@@ -1,0 +1,109 @@
+{
+    "name": " Sidemar S Junior",
+    "photo": "https://avatars.githubusercontent.com/u/90000000?v=4",
+    "job": "Suporte Técnico - SGBR Sistemas",
+    "location": "Arabutã - SC",
+    "phone": "https://www.wa.me/4998164594",
+    "email": {
+    "name":"sidemarschimmelpfennig@outlook.com",
+    "href" :"mailto:sidemarschimmelpfennig@outlook.com"
+    },
+    "linkcur":"https://drive.google.com/file/d/1HffpS36_aNHfOUlkRYtId4_E9A6xCmEn/view?usp=drive_link"
+     ,
+
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "Nodejs",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/nodejs.svg"
+        },
+        {
+          "name": "Css3",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/css3.svg"
+        },
+        {
+          "name": "Delphi",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/delphi.svg"
+        },
+        {
+          "name": "MySql",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/mysql.svg"
+        },
+        {
+          "name": "Javascipt",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/js.svg"
+        },
+        {
+          "name": "VueJs",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/vuejs.svg"
+        },
+        {
+          "name": "HTML5",
+          "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/dio/data/img/html5.svg"
+        }
+      ],
+      "softSkills": [
+        "Empatia",
+        "Persistencia",
+        "Trabalho em equipe",
+        "Flexibilidade",
+        "Organização",
+        "Facilidade de Comunicação"
+      ]
+    },
+    "languages": [
+      "Português BR",
+      "Alemão(Basico)"
+    ],
+    "portfolio": [
+      {
+        "name": "Projetos Agenda(Node e EJS)",
+        "url": "https://github.com/sidemarschimmelpfennig/projeto_agenda",
+        "github": true
+      },
+      {
+        "name": "Projeto Pizzaria Vue",
+        "url": "https://github.com/sidemarschimmelpfennig/la_bella_pizza_front_end",
+        "github": true
+      },
+        {
+        "name": "Projeto Pokedex Vue",
+        "url": "https://github.com/sidemarschimmelpfennig/pokedex_vue",
+        "github": true
+      },
+    {
+        "name": "Projeto blog(Node Js)",
+        "url": "https://github.com/sidemarschimmelpfennig/projeto_blog",
+        "github": true
+      },
+      {
+        "name": "Projetos em Delphi",
+        "url": "https://github.com/sidemarschimmelpfennig/projetos_delphi",
+        "github": true
+      }
+
+
+    ],
+    "professionalExperience": [
+      {
+        "name": "Delphi Developer / CoffCode Sistemas",
+        "period": " ago 2022 - nov 2023",
+        "description": "Trabalho atualmente e um grande orgulho pois a empresa me proporcionou minha primeira oportunidade como desenvolvedor"
+      },
+      {
+        "name": "Suporte Tecnico / Prodo Sistemas",
+        "period": " nov 2021 - mar 2022",
+        "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      },
+      {
+        "name": " Soldador e Auxiliar de Produção / Artefatos Arabutã",
+        "period": "abr 2015 - nov 2021",
+        "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo,alias minha primeira oportunidade aos 17 anos."
+      },
+        {
+        "name": " Suporte Técnico/ SGBR Sistemas",
+        "period": "abr 2024 - out 2024",
+        "description": "Atualmente trabalhando ao lado da SGBR Sistemas como suporte técnico"
+      }
+    ]
+  }

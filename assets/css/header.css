@@ -1,0 +1,126 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.header .download p{
+    display: inline-block;
+    position: absolute;
+    max-width: 100px;
+    flex-wrap: wrap;
+    top: 2rem;
+    left: -.1rem;
+    font-size : 0.8rem;
+}
+.header .download::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: .8rem;
+    left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icons/download-cur.svg');
+}
+
+.header::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icons/header.svg');
+}
+
+
+
+
+
+.photo{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.header .title{
+    font-family: 'Neue Machine', sans-serif ;
+    text-align: center;
+}
+
+.information{
+  display : flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%; 
+}
+.information p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    margin : 0 ;
+    font-size: 1rem;
+}
+
+.information p::before{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+    
+}
+.information p::before svg{
+    color: red;
+}
+.information p:nth-child(4){
+    font-size: 0.9rem;
+}
+.information p:nth-child(1)::before{
+    background-image: url(../img/icons/job.svg);
+}
+.information p:nth-child(2)::before{
+    background-image: url(../img/icons/location.svg);
+}
+.information p:nth-child(3)::before{
+    background-image: url(../img/icons/phone.svg);
+}
+.information p:nth-child(4)::before{
+    background-image: url(../img/icons/email.svg);
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        margin: 1rem;
+        display: grid;
+        grid-template-areas:
+            "photo title"
+            "photo information"
+        ;
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 210px;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}
