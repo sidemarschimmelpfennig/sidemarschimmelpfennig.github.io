@@ -1,7 +1,7 @@
 {
     "name": " Sidemar S Junior",
     "photo": "https://avatars.githubusercontent.com/u/90000000?v=4",
-    "job": "Suporte Técnico - SGBR Sistemas",
+    "job": "Prefeitura municipal de arabutã",
     "location": "Arabutã - SC",
     "phone": "https://www.wa.me/4998164594",
     "email": {
@@ -77,8 +77,13 @@
         "github": true
       },
       {
-        "name": "Projetos em Delphi",
-        "url": "https://github.com/sidemarschimmelpfennig/projetos_delphi",
+        "name": "Monolito Financeiro(Delphi | Object Pascal)",
+        "url": "https://github.com/sidemarschimmelpfennig/monolito_financeiro",
+        "github": true
+      },
+    {
+        "name": "ze_do_hamburguer_app(React ts)",
+        "url": "https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app",
         "github": true
       }
 
@@ -94,11 +99,6 @@
         "name": "Suporte Tecnico / Prodo Sistemas",
         "period": " nov 2021 - mar 2022",
         "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
-      },
-      {
-        "name": " Soldador e Auxiliar de Produção / Artefatos Arabutã",
-        "period": "abr 2015 - nov 2021",
-        "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo,alias minha primeira oportunidade aos 17 anos."
       },
         {
         "name": " Suporte Técnico/ SGBR Sistemas",
