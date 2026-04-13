@@ -52,28 +52,8 @@
   "languages": ["Português BR", "Alemão(Basico)"],
   "portfolio": [
     {
-      "name": "Projetos Agenda(Node e EJS)",
-      "url": "https://github.com/sidemarschimmelpfennig/projeto_agenda",
-      "github": true
-    },
-    {
-      "name": "Projeto Pizzaria Vue",
-      "url": "https://github.com/sidemarschimmelpfennig/la_bella_pizza_front_end",
-      "github": true
-    },
-    {
-      "name": "Projeto Pokedex Vue",
-      "url": "https://github.com/sidemarschimmelpfennig/pokedex_vue",
-      "github": true
-    },
-    {
-      "name": "Projeto blog(Node Js)",
-      "url": "https://github.com/sidemarschimmelpfennig/projeto_blog",
-      "github": true
-    },
-    {
-      "name": "Monolito Financeiro(Delphi | Object Pascal)",
-      "url": "https://github.com/sidemarschimmelpfennig/monolito_financeiro",
+      "name": "Sistema Erp Basico(Delphi)",
+      "url": "https://github.com/sidemarschimmelpfennig/sistema_erp_basico",
       "github": true
     },
     {
