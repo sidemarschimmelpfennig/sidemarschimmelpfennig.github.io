@@ -1,126 +1,189 @@
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header {
+    width: 100%;
+    margin-bottom: 1.5rem;
     position: relative;
 }
-.header .download p{
-    display: inline-block;
-    position: absolute;
-    max-width: 100px;
-    flex-wrap: wrap;
-    top: 2rem;
-    left: -.1rem;
-    font-size : 0.8rem;
-}
-.header .download::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: .8rem;
-    left: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/download-cur.svg');
+
+/* Top bar with CV download moved to right side */
+.header-top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 0.25rem;
 }
 
-.header::after{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/header.svg');
+.download {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-secondary);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    text-decoration: none;
 }
 
-
-
-
-
-.photo{
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+.download:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
 }
 
-.header .title{
-    font-family: 'Neue Machine', sans-serif ;
-    text-align: center;
+.download-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
-.information{
-  display : flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  width: 100%; 
+.download-text {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    letter-spacing: 0.02em;
 }
-.information p{
+
+/* Profile Layout Row */
+.profile-card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem;
-    margin : 0 ;
-    font-size: 1rem;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    margin: 0.5rem 0 1.5rem 0;
 }
 
-.information p::before{
+/* Glowing Halo Photo */
+.photo-wrapper {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    min-width: 165px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 60%, #38bdf8 100%);
+    box-shadow: 
+        0 0 25px 3px rgba(56, 189, 248, 0.6),
+        0 0 50px 10px rgba(14, 165, 233, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-wrapper::before {
     content: '';
+    position: absolute;
+    inset: -12px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(14, 165, 233, 0.1) 60%, transparent 80%);
+    z-index: -1;
+    filter: blur(8px);
+    pointer-events: none;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background-color: #1e293b;
+}
+
+/* Profile Details / Typography */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.85rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    line-height: 1.18;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+}
+
+.title .greeting-row {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.title .name {
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0.15rem;
+    line-height: 1.2;
+}
+
+/* Contact & Meta Information List */
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.84rem;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.info-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: .5rem;
-    
-}
-.information p::before svg{
-    color: red;
-}
-.information p:nth-child(4){
-    font-size: 0.9rem;
-}
-.information p:nth-child(1)::before{
-    background-image: url(../img/icons/job.svg);
-}
-.information p:nth-child(2)::before{
-    background-image: url(../img/icons/location.svg);
-}
-.information p:nth-child(3)::before{
-    background-image: url(../img/icons/phone.svg);
-}
-.information p:nth-child(4)::before{
-    background-image: url(../img/icons/email.svg);
-    
+    filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.4));
 }
 
-@media only screen and (min-width: 768px) {
-    .header {
-        margin: 1rem;
-        display: grid;
-        grid-template-areas:
-            "photo title"
-            "photo information"
-        ;
+.info-item a {
+    color: #94a3b8;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 680px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        margin-left: 0;
     }
 
-    .header .photo {
-        grid-area: photo;
-        margin: 0 auto;
+    .photo-wrapper {
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
     }
 
-    .header .title {
-        grid-area: title;
-        text-align: start;
-        max-width: 210px;
+    .title {
+        align-items: center;
+        font-size: 1.5rem;
     }
 
-    .header .information {
-        grid-area: information;
+    .information {
+        align-items: center;
+    }
+
+    .info-item {
+        justify-content: center;
+        font-size: 0.82rem;
     }
 }

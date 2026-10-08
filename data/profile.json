@@ -1,9 +1,9 @@
 {
-  "name": " Sidemar S Junior",
-  "photo": "https://avatars.githubusercontent.com/u/90000000?v=4",
-  "job": "Prefeitura municipal de arabutã",
+  "name": "Sidemar Schimmelpfennig Junior",
+  "photo": "./assets/img/my-photo.png",
+  "job": "Assistente administrativo - Prefeitura Municipal de Arabutã",
   "location": "Arabutã - SC",
-  "phone": "https://www.wa.me/4998164594",
+  "phone": "https://wa.me/554998110169",
   "email": {
     "name": "sidemarschimmelpfennig@outlook.com",
     "href": "mailto:sidemarschimmelpfennig@outlook.com"
@@ -12,32 +12,40 @@
   "skills": {
     "hardSkills": [
       {
-        "name": "Nodejs",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/nodejs.svg"
-      },
-      {
-        "name": "Css3",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/css3.svg"
-      },
-      {
         "name": "Delphi",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/delphi.svg"
+        "logo": "./data/img/delphi.svg"
       },
       {
-        "name": "MySql",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/mysql.svg"
+        "name": "Node.js",
+        "logo": "./data/img/nodejs.svg"
       },
       {
-        "name": "Javascipt",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/js.svg"
+        "name": "Vue.js",
+        "logo": "./data/img/vuejs.svg"
       },
       {
-        "name": "VueJs",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/vuejs.svg"
+        "name": "JavaScript",
+        "logo": "./data/img/js.svg"
       },
       {
-        "name": "HTML5",
-        "logo": "https://raw.githubusercontent.com/sidemarschimmelpfennig/sidemarschimmelpfennig.github.io/refs/heads/main/data/img/html5.svg"
+        "name": "MySQL",
+        "logo": "./data/img/mysql.svg"
+      },
+      {
+        "name": "Git",
+        "logo": "./data/img/git.svg"
+      },
+      {
+        "name": "Python",
+        "logo": "./data/img/python.svg"
+      },
+      {
+        "name": "TypeScript",
+        "logo": "./data/img/typescript.svg"
+      },
+      {
+        "name": "CodeIgniter",
+        "logo": "./data/img/codeigniter.svg"
       }
     ],
     "softSkills": [
@@ -64,19 +72,24 @@
   ],
   "professionalExperience": [
     {
-      "name": "Delphi Developer / CoffCode Sistemas",
-      "period": " ago 2022 - nov 2023",
-      "description": "Trabalho atualmente e um grande orgulho pois a empresa me proporcionou minha primeira oportunidade como desenvolvedor"
+      "name": "Assistente administrativo / Prefeitura Municipal de Arabutã",
+      "period": "jun. de 2025 - o momento",
+      "description": "Atuação como Assistente administrativo em tempo integral na Prefeitura Municipal de Arabutã."
     },
     {
-      "name": "Suporte Tecnico / Prodo Sistemas",
-      "period": " nov 2021 - mar 2022",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      "name": "Suporte técnico II / SGBr® Sistemas",
+      "period": "abr. de 2024 - jun. de 2025",
+      "description": "Suporte técnico especializado em sistemas, resolução de chamados e atendimento ao cliente."
     },
     {
-      "name": " Suporte Técnico/ SGBR Sistemas",
-      "period": "abr 2024 - out 2024",
-      "description": "Atualmente trabalhando ao lado da SGBR Sistemas como suporte técnico"
+      "name": "Desenvolvedor Delphi / Coffcode Sistemas",
+      "period": "ago. de 2022 - nov. de 2023",
+      "description": "Desenvolvimento e Manutençao de sistema de automação comercial."
+    },
+    {
+      "name": "Suporte técnico / Prodo Sistemas",
+      "period": "nov. de 2021 - fev. de 2022",
+      "description": "Comunicação e atendimento ao cliente no suporte a sistemas."
     }
   ]
 }

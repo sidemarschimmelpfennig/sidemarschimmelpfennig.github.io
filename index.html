@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidemar Junior</title>
+    <title>Sidemar S Junior - Portfólio</title>
     <!--Normalize css-->
     <link
       rel="stylesheet"
@@ -13,11 +13,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--Fonts Google-->
+    <!--Fonts Google (Plus Jakarta Sans & Inter)-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <!---Styles-->
@@ -28,82 +28,229 @@
     <link rel="stylesheet" href="./assets/css/portfolio.css" />
     <link rel="stylesheet" href="./assets/css/experience.css" />
     <link rel="stylesheet" href="./assets/css/skills.css" />
-    <link rel="icon" href="/assets/img/icons/github.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/img/icons/github.svg" type="image/svg+xml" />
   </head>
   <body>
+    <!-- Background overlay glows -->
+    <div class="bg-glow bg-glow-left" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-right" aria-hidden="true"></div>
+
     <main class="main">
       <header class="header">
-        <a href="#" class="download" id="download"><p>Curriculo</p></a>
-        <img
-          id="profile-photo"
-          src="./assets/img/my-photo.png"
-          alt="Foto de perfil  de Sidemar Schimmelpfennig Junior"
-          class="photo"
-        />
-        <h1 class="title">
-          Olá,<br />eu sou<span id="profile-name"> Carregando...</span>
-        </h1>
-        <div class="information">
-          <p id="profile-job">Carregando...</p>
-          <p id="profile-location">Carregando...</p>
-          <p>
-            <a id="profile-phone" href="tel: +55 49 998164594">Carregando...</a>
-          </p>
-          <p><a id="profile-email" href="">Carregando...</a></p>
+        <!-- Top bar with CV download and options menu -->
+        <div class="header-top-bar">
+          <a
+            href="https://drive.google.com/file/d/1HffpS36_aNHfOUlkRYtId4_E9A6xCmEn/view?usp=drive_link"
+            class="download"
+            id="download"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Baixar Currículo"
+          >
+            <img
+              src="./assets/img/icons/download-cur.svg"
+              alt="Ícone de Currículo"
+              class="download-icon"
+            />
+            <span class="download-text">Currículo</span>
+          </a>
+        </div>
+
+        <!-- Main profile presentation row -->
+        <div class="profile-card">
+          <div class="photo-wrapper">
+            <img
+              id="profile-photo"
+              src="./assets/img/my-photo.png"
+              alt="Foto de perfil de Sidemar Schimmelpfennig Junior"
+              class="photo"
+            />
+          </div>
+
+          <div class="profile-details">
+            <h1 class="title">
+              <span class="greeting-row">Olá, eu sou</span>
+              <span class="name" id="profile-name">Sidemar Schimmelpfennig<br />Junior</span>
+            </h1>
+
+            <div class="information">
+              <p class="info-item info-job">
+                <img
+                  src="./assets/img/icons/job.svg"
+                  alt="Profissão"
+                  class="info-icon"
+                />
+                <span id="profile-job">Assistente administrativo - Prefeitura Municipal de Arabutã</span>
+              </p>
+              <p class="info-item info-location">
+                <img
+                  src="./assets/img/icons/location.svg"
+                  alt="Localização"
+                  class="info-icon"
+                />
+                <span id="profile-location">Arabutã - SC</span>
+              </p>
+              <p class="info-item info-phone">
+                <img
+                  src="./assets/img/icons/phone.svg"
+                  alt="WhatsApp"
+                  class="info-icon"
+                />
+                <a
+                  id="profile-phone"
+                  href="https://wa.me/554998110169"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp</a
+                >
+              </p>
+              <p class="info-item info-email">
+                <img
+                  src="./assets/img/icons/email.svg"
+                  alt="E-mail"
+                  class="info-icon"
+                />
+                <a
+                  id="profile-email"
+                  href="mailto:sidemarschimmelpfennig@outlook.com"
+                  >sidemarschimmelpfennig@outlook.com</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </header>
-      <section class="acordion">
-        <button class="trigger" type="button">
-          <h2>Skills</h2>
-        </button>
-        <div class="content">
-          <div class="skills">
-            <section class="tools">
-              <h3>Ferramentas:</h3>
-              <ul id="profile-Hard">
-                <li>Carregando ...</li>
-                <li></li>
-              </ul>
-            </section>
-            <section class="personal">
-              <h3>Pessoal :</h3>
-              <ul id="profile-Soft">
-                <li>Carregando...</li>
-              </ul>
-            </section>
+
+      <!-- Section: Stack Tecnológica -->
+      <section class="card-section">
+        <div class="section-header">
+          <h2>Stack Tecnológica</h2>
+        </div>
+        <div class="section-content">
+          <div class="skills-pills" id="profile-Hard">
+            <span class="skill-pill"><img src="./data/img/delphi.svg" alt="Delphi" class="skill-icon" /> Delphi</span>
+            <span class="skill-pill"><img src="./data/img/nodejs.svg" alt="Node.js" class="skill-icon" /> Node.js</span>
+            <span class="skill-pill"><img src="./data/img/vuejs.svg" alt="Vue.js" class="skill-icon" /> Vue.js</span>
+            <span class="skill-pill"><img src="./data/img/js.svg" alt="JavaScript" class="skill-icon" /> JavaScript</span>
+            <span class="skill-pill"><img src="./data/img/mysql.svg" alt="MySQL" class="skill-icon" /> MySQL</span>
+            <span class="skill-pill"><img src="./data/img/git.svg" alt="Git" class="skill-icon" /> Git</span>
+            <span class="skill-pill"><img src="./data/img/python.svg" alt="Python" class="skill-icon" /> Python</span>
+            <span class="skill-pill"><img src="./data/img/typescript.svg" alt="TypeScript" class="skill-icon" /> TypeScript</span>
+            <span class="skill-pill"><img src="./data/img/codeigniter.svg" alt="CodeIgniter" class="skill-icon" /> CodeIgniter</span>
           </div>
         </div>
       </section>
-      <section class="acordion">
-        <button class="trigger" type="button">
+
+      <!-- Section: Idiomas -->
+      <section class="card-section">
+        <div class="section-header">
           <h2>Idiomas</h2>
-        </button>
-        <div class="content">
-          <ul class="languages" id="profile-Language">
-            <li>Carregando...</li>
-          </ul>
+        </div>
+        <div class="section-content">
+          <div class="languages-list" id="profile-Language">
+            <div class="language-item">
+              <span class="language-name">Português (Nativo)</span>
+              <div class="language-bar-track">
+                <div class="language-bar-fill" style="width: 100%;"></div>
+              </div>
+            </div>
+            <div class="language-item">
+              <span class="language-name">Alemão (Básico)</span>
+              <div class="language-bar-track">
+                <div class="language-bar-fill" style="width: 45%;"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="acordion">
-        <button class="trigger" type="button">
+
+      <!-- Section: Meus Projetos -->
+      <section class="card-section">
+        <div class="section-header">
           <h2>Meus Projetos</h2>
-        </button>
-        <div class="content">
-          <ul class="portfolio" id="profile-Projects"></ul>
+        </div>
+        <div class="section-content">
+          <div class="projects-grid" id="profile-Projects">
+            <div class="project-card">
+              <div>
+                <h3 class="project-title">Sistema Erp Basico (Delphi)</h3>
+                <p class="project-desc">Desenvolvido em Delphi e Banco de Dados MySQL.</p>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sidemarschimmelpfennig/sistema_erp_basico" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
+                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://github.com/sidemarschimmelpfennig/sistema_erp_basico" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
+                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
+                </a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div>
+                <h3 class="project-title">Zé do Hamburguer (React ts)</h3>
+                <p class="project-desc">Desenvolvido em React com TypeScript.</p>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
+                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
+                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="acordion">
-        <button class="trigger" type="button">
-          <h2>Experiencia Profissional</h2>
-        </button>
-        <div class="content">
-          <ul class="experience" id="profile-Professional">
-            <li>Carregando...</li>
+
+      <!-- Section: Experiência Profissional -->
+      <section class="card-section">
+        <div class="section-header">
+          <h2>Experiência Profissional</h2>
+        </div>
+        <div class="section-content">
+          <ul class="timeline" id="profile-Professional">
+            <li class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-company">Prefeitura Municipal de Arabutã</h3>
+                <span class="timeline-role">Assistente administrativo</span>
+                <span class="timeline-period">jun. de 2025 - o momento</span>
+                <p class="timeline-desc">Atuação como Assistente administrativo em tempo integral na Prefeitura Municipal de Arabutã.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-company">SGBr® Sistemas</h3>
+                <span class="timeline-role">Suporte técnico II</span>
+                <span class="timeline-period">abr. de 2024 - jun. de 2025</span>
+                <p class="timeline-desc">Suporte técnico especializado em sistemas, resolução de chamados e atendimento ao cliente.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-company">Coffcode Sistemas</h3>
+                <span class="timeline-role">Desenvolvedor Delphi</span>
+                <span class="timeline-period">ago. de 2022 - nov. de 2023</span>
+                <p class="timeline-desc">Desenvolvimento e Manutençao de sistema de automação comercial.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-company">Prodo Sistemas</h3>
+                <span class="timeline-role">Suporte técnico</span>
+                <span class="timeline-period">nov. de 2021 - fev. de 2022</span>
+                <p class="timeline-desc">Comunicação e atendimento ao cliente no suporte a sistemas.</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
     </main>
-    <script src="./assets/js/acordion.js"></script>
+
     <script src="./assets/js/api.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

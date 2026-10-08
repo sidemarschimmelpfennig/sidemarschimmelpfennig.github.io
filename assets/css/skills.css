@@ -1,50 +1,41 @@
-.skills{
+/* Stack Tecnológica Pills */
+.skills-pills {
     display: flex;
-    flex-direction: column;
-}
-
-.skills .tools ul{
-    max-width: 400px;
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 0.55rem;
+    width: 100%;
     margin: 0;
-    padding: 0; 
-    list-style: none;
+    padding: 0.2rem 0 0 0;
 }
 
-.skills .tools ul li img{
-    max-width: 40px;
-    max-height: 40px;
-    margin: 0 .5rem;
-}
-
-.skills .personal ul{
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;
+.skill-pill {
+    display: inline-flex;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0; 
- }
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #e2e8f0;
+    letter-spacing: 0.01em;
+    user-select: none;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
 
- .skills .personal ul li{
-    margin-left: 1.5rem;
-    padding: .5rem;
- }
+.skill-pill:hover {
+    background: rgba(56, 189, 248, 0.09);
+    border-color: rgba(56, 189, 248, 0.35);
+    transform: translateY(-1px);
+    color: #ffffff;
+}
 
- @media only screen and (min-width: 768px) {
-    .skills{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }   
-
-    .skills .tools ul li im{
-        max-width: 50px;
-        max-height: 50px;
-    }
- }
+.skill-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}

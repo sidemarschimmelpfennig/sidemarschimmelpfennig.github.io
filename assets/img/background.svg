@@ -1,21 +1,201 @@
-<svg width="2560" height="1964" viewBox="0 0 2560 1964" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_835_19)">
-<rect opacity="0.67" width="235.957" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 1113.38 -1182.65)" fill="#4314CB"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 916.707 -1052.28)" fill="#8C35EC"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 720.036 -921.907)" fill="#BB44F0"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 523.366 -791.536)" fill="#E554F3"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 326.696 -661.165)" fill="#F664E4"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 130.026 -530.794)" fill="#F974CC"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 -66.6465 -400.423)" fill="#FB85B9"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 -263.317 -270.052)" fill="#FD97AE"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 -459.987 -139.681)" fill="#FEA9AA"/>
-<rect width="235.958" height="1328.39" transform="matrix(-0.833501 0.552519 0.547264 0.83696 -656.658 -9.3103)" fill="#FFC9BB"/>
-</g>
-<defs>
-<filter id="filter0_f_835_19" x="-1650" y="-2173.76" width="4680.37" height="4137" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="300" result="effect1_foregroundBlur_835_19"/>
-</filter>
-</defs>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial Gradients for ambient glows -->
+    <radialGradient id="bgGlowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="glowTopRight" cx="90%" cy="10%" r="45%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="40%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowBottomLeft" cx="15%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowBehindCard" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base dark canvas -->
+  <rect width="1920" height="1080" fill="url(#bgGlowCenter)"/>
+  <rect width="1920" height="1080" fill="url(#glowTopRight)"/>
+  <rect width="1920" height="1080" fill="url(#glowBottomLeft)"/>
+  <rect width="1920" height="1080" fill="url(#glowBehindCard)"/>
+
+  <!-- LEFT SIDE: Network Graph / Constellation Nodes -->
+  <g opacity="0.28" stroke="#38bdf8" stroke-width="1.2">
+    <!-- Lines connecting nodes -->
+    <line x1="120" y1="180" x2="230" y2="240"/>
+    <line x1="230" y1="240" x2="310" y2="170"/>
+    <line x1="230" y1="240" x2="190" y2="360"/>
+    <line x1="190" y1="360" x2="110" y2="440"/>
+    <line x1="190" y1="360" x2="300" y2="430"/>
+    <line x1="300" y1="430" x2="390" y2="350"/>
+    <line x1="310" y1="170" x2="420" y2="220"/>
+    <line x1="420" y1="220" x2="390" y2="350"/>
+    <line x1="390" y1="350" x2="480" y2="440"/>
+    <line x1="110" y1="440" x2="160" y2="580"/>
+    <line x1="160" y1="580" x2="270" y2="540"/>
+    <line x1="300" y1="430" x2="270" y2="540"/>
+    <line x1="270" y1="540" x2="340" y2="670"/>
+    <line x1="160" y1="580" x2="190" y2="720"/>
+    <line x1="190" y1="720" x2="340" y2="670"/>
+    <line x1="340" y1="670" x2="440" y2="600"/>
+    <line x1="440" y1="600" x2="480" y2="440"/>
+    <line x1="80" y1="290" x2="120" y2="180"/>
+    <line x1="80" y1="290" x2="190" y2="360"/>
+    <line x1="50" y1="460" x2="110" y2="440"/>
+  </g>
+
+  <!-- Left Side Nodes (circles) -->
+  <g fill="#38bdf8" opacity="0.45">
+    <circle cx="120" cy="180" r="3.5"/>
+    <circle cx="230" cy="240" r="4.5"/>
+    <circle cx="310" cy="170" r="3"/>
+    <circle cx="420" cy="220" r="4"/>
+    <circle cx="190" cy="360" r="4"/>
+    <circle cx="300" cy="430" r="4.5"/>
+    <circle cx="390" cy="350" r="3.5"/>
+    <circle cx="480" cy="440" r="4"/>
+    <circle cx="110" cy="440" r="3.5"/>
+    <circle cx="160" cy="580" r="4"/>
+    <circle cx="270" cy="540" r="3.5"/>
+    <circle cx="340" cy="670" r="4.5"/>
+    <circle cx="440" cy="600" r="3.5"/>
+    <circle cx="190" cy="720" r="3"/>
+    <circle cx="80" cy="290" r="2.5"/>
+    <circle cx="50" cy="460" r="3"/>
+  </g>
+
+  <!-- Left Side Code Snippets in Monospace (from reference screenshot) -->
+  <g font-family="Consolas, 'Fira Code', Monaco, monospace" font-size="21" fill="#38bdf8" opacity="0.22" font-weight="500">
+    <text x="320" y="215">&lt;div&gt;</text>
+    <text x="345" y="255">const data = await ...</text>
+    <text x="370" y="295">&lt;div class="node"&gt;</text>
+    <text x="340" y="380">&lt;/dodo&gt;</text>
+    <text x="320" y="420">&lt;/div&gt;</text>
+
+    <text x="330" y="640">const { name, role } = profile;</text>
+    <text x="330" y="680">function renderPortfolio() {</text>
+    <text x="365" y="720">...</text>
+    <text x="330" y="760">}</text>
+  </g>
+
+  <!-- RIGHT SIDE: Flowchart Architecture Diagrams & Decision Nodes -->
+  <g stroke="#38bdf8" stroke-width="1.6" fill="none" opacity="0.26">
+    <!-- Top flowchart block -->
+    <rect x="1460" y="150" width="70" height="42" rx="4"/>
+    <line x1="1495" y1="192" x2="1495" y2="235"/>
+    
+    <!-- Diamond decision node -->
+    <path d="M1495 235 L1530 270 L1495 305 L1460 270 Z"/>
+    
+    <!-- Outgoing branches -->
+    <line x1="1530" y1="270" x2="1580" y2="270"/>
+    <line x1="1580" y1="270" x2="1580" y2="350"/>
+    <line x1="1495" y1="305" x2="1495" y2="390"/>
+
+    <!-- Process block right branch -->
+    <rect x="1560" y="325" width="85" height="45" rx="10"/>
+
+    <!-- Bottom diamond and branches -->
+    <line x1="1530" y1="520" x2="1530" y2="600"/>
+    <path d="M1530 600 L1565 635 L1530 670 L1495 635 Z"/>
+    <line x1="1530" y1="670" x2="1530" y2="720"/>
+    <line x1="1495" y1="635" x2="1450" y2="635"/>
+    <line x1="1450" y1="635" x2="1450" y2="720"/>
+    <line x1="1565" y1="635" x2="1610" y2="635"/>
+    <line x1="1610" y1="635" x2="1610" y2="720"/>
+
+    <!-- Solid rounded blocks at bottom of flowchart -->
+    <rect x="1420" y="720" width="60" height="40" rx="8" fill="#38bdf8" fill-opacity="0.12"/>
+    <rect x="1500" y="720" width="60" height="40" rx="8" fill="#38bdf8" fill-opacity="0.15"/>
+    <rect x="1580" y="720" width="60" height="40" rx="8" fill="#38bdf8" fill-opacity="0.12"/>
+
+    <!-- Horizontal connector top -->
+    <line x1="1460" y1="171" x2="1430" y2="171"/>
+    <line x1="1430" y1="171" x2="1430" y2="340"/>
+    <line x1="1430" y1="340" x2="1470" y2="340"/>
+  </g>
+
+  <!-- RIGHT SIDE: Data Grid / Pixel Matrix Block -->
+  <g fill="#38bdf8" opacity="0.2">
+    <!-- Row 1 -->
+    <rect x="1580" y="170" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1596" y="170" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1612" y="170" width="10" height="10" rx="2" fill-opacity="0.6"/>
+    <rect x="1628" y="170" width="10" height="10" rx="2" fill-opacity="0.2"/>
+    <rect x="1644" y="170" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1660" y="170" width="10" height="10" rx="2" fill-opacity="0.4"/>
+    <rect x="1676" y="170" width="10" height="10" rx="2" fill-opacity="0.5"/>
+    <rect x="1692" y="170" width="10" height="10" rx="2" fill-opacity="0.8"/>
+
+    <!-- Row 2 -->
+    <rect x="1580" y="186" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1596" y="186" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1612" y="186" width="10" height="10" rx="2" fill-opacity="0.4"/>
+    <rect x="1628" y="186" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1644" y="186" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1660" y="186" width="10" height="10" rx="2" fill-opacity="0.6"/>
+    <rect x="1676" y="186" width="10" height="10" rx="2" fill-opacity="0.2"/>
+    <rect x="1692" y="186" width="10" height="10" rx="2" fill-opacity="0.5"/>
+
+    <!-- Row 3 -->
+    <rect x="1580" y="202" width="10" height="10" rx="2" fill-opacity="0.6"/>
+    <rect x="1596" y="202" width="10" height="10" rx="2" fill-opacity="0.2"/>
+    <rect x="1612" y="202" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1628" y="202" width="10" height="10" rx="2" fill-opacity="0.5"/>
+    <rect x="1644" y="202" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1660" y="202" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1676" y="202" width="10" height="10" rx="2" fill-opacity="0.6"/>
+    <rect x="1692" y="202" width="10" height="10" rx="2" fill-opacity="0.3"/>
+
+    <!-- Row 4 -->
+    <rect x="1580" y="218" width="10" height="10" rx="2" fill-opacity="0.4"/>
+    <rect x="1596" y="218" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1612" y="218" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1628" y="218" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1644" y="218" width="10" height="10" rx="2" fill-opacity="0.2"/>
+    <rect x="1660" y="218" width="10" height="10" rx="2" fill-opacity="0.5"/>
+    <rect x="1676" y="218" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1692" y="218" width="10" height="10" rx="2" fill-opacity="0.4"/>
+
+    <!-- Row 5 -->
+    <rect x="1580" y="234" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1596" y="234" width="10" height="10" rx="2" fill-opacity="0.4"/>
+    <rect x="1612" y="234" width="10" height="10" rx="2" fill-opacity="0.6"/>
+    <rect x="1628" y="234" width="10" height="10" rx="2" fill-opacity="0.2"/>
+    <rect x="1644" y="234" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1660" y="234" width="10" height="10" rx="2" fill-opacity="0.4"/>
+    <rect x="1676" y="234" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1692" y="234" width="10" height="10" rx="2" fill-opacity="0.6"/>
+
+    <!-- Row 6 -->
+    <rect x="1580" y="250" width="10" height="10" rx="2" fill-opacity="0.3"/>
+    <rect x="1596" y="250" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1612" y="250" width="10" height="10" rx="2" fill-opacity="0.5"/>
+    <rect x="1628" y="250" width="10" height="10" rx="2" fill-opacity="0.8"/>
+    <rect x="1644" y="250" width="10" height="10" rx="2" fill-opacity="0.4"/>
+    <rect x="1660" y="250" width="10" height="10" rx="2" fill-opacity="0.7"/>
+    <rect x="1676" y="250" width="10" height="10" rx="2" fill-opacity="0.2"/>
+    <rect x="1692" y="250" width="10" height="10" rx="2" fill-opacity="0.5"/>
+  </g>
 </svg>
