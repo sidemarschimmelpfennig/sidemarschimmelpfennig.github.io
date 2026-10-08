@@ -8,7 +8,9 @@
     "name": "sidemarschimmelpfennig@outlook.com",
     "href": "mailto:sidemarschimmelpfennig@outlook.com"
   },
-  "linkcur": "https://drive.google.com/file/d/1HffpS36_aNHfOUlkRYtId4_E9A6xCmEn/view?usp=drive_link",
+  "github": "https://github.com/sidemarschimmelpfennig",
+  "linkedin": "https://www.linkedin.com/in/sidemar-schimmelpfennig-junior/",
+  "linkcur": "https://drive.google.com/file/d/1O6A1CUZq08TJ78s7km2AlBf2hLpJqQcg/view?usp=sharing",
   "skills": {
     "hardSkills": [
       {
@@ -57,27 +59,47 @@
       "Facilidade de Comunicação"
     ]
   },
-  "languages": ["Português BR", "Alemão(Basico)"],
+  "languages": ["Português BR", "Alemão(Basico)", "Inglês: Em estudo"],
   "portfolio": [
     {
-      "name": "Sistema Erp Basico(Delphi)",
+      "name": "Sistema Erp Basico (Delphi)",
       "url": "https://github.com/sidemarschimmelpfennig/sistema_erp_basico",
-      "github": true
+      "github": true,
+      "description": "Desenvolvido em Delphi e Banco de Dados MySQL.",
+      "tech": [
+        { "name": "Delphi", "logo": "./data/img/delphi.svg" },
+        { "name": "MySQL", "logo": "./data/img/mysql.svg" }
+      ]
     },
     {
-      "name": "Zé do Hamburguer(React ts)",
+      "name": "Zé do Hamburguer (React ts)",
       "url": "https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app",
-      "github": true
+      "github": true,
+      "description": "Desenvolvido em React com TypeScript.",
+      "tech": [
+        { "name": "React", "logo": "./data/img/react.svg" },
+        { "name": "TypeScript", "logo": "./data/img/typescript.svg" }
+      ]
+    },
+    {
+      "name": "Placar Municipal de Arabutã (Python)",
+      "url": "https://github.com/sidemarschimmelpfennig/placar-futsal-desktop",
+      "github": true,
+      "description": "Placar Futsal Desktop desenvolvido em Python com PyQt5, arquitetura de tela dupla (Dual Monitor para operador e telão) e integração nativa ao VLC Media Player.",
+      "tech": [
+        { "name": "Python", "logo": "./data/img/python.svg" },
+        { "name": "PyQt5", "logo": "./data/img/python.svg" }
+      ]
     }
   ],
   "professionalExperience": [
     {
       "name": "Assistente administrativo / Prefeitura Municipal de Arabutã",
       "period": "jun. de 2025 - o momento",
-      "description": "Atuação como Assistente administrativo em tempo integral na Prefeitura Municipal de Arabutã."
+      "description": "Atuação nas rotinas e atividades de assistência administrativa, além de atuação por meio de câmara técnica no desenvolvimento de marketplace em CodeIgniter, Vue.js e banco MariaDB, criação de API REST, desenvolvimento de projetos em Python e ajustes no site de turismo com WordPress."
     },
     {
-      "name": "Suporte técnico II / SGBr® Sistemas",
+      "name": "Suporte técnico II / SGBR Sistemas",
       "period": "abr. de 2024 - jun. de 2025",
       "description": "Suporte técnico especializado em sistemas, resolução de chamados e atendimento ao cliente."
     },

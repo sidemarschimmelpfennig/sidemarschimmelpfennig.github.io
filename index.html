@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidemar S Junior - Portfólio</title>
+    <title>Sidemar Schimmelpfennig Junior</title>
     <!--Normalize css-->
     <link
       rel="stylesheet"
@@ -37,26 +37,6 @@
 
     <main class="main">
       <header class="header">
-        <!-- Top bar with CV download and options menu -->
-        <div class="header-top-bar">
-          <a
-            href="https://drive.google.com/file/d/1HffpS36_aNHfOUlkRYtId4_E9A6xCmEn/view?usp=drive_link"
-            class="download"
-            id="download"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Baixar Currículo"
-          >
-            <img
-              src="./assets/img/icons/download-cur.svg"
-              alt="Ícone de Currículo"
-              class="download-icon"
-            />
-            <span class="download-text">Currículo</span>
-          </a>
-        </div>
-
-        <!-- Main profile presentation row -->
         <div class="profile-card">
           <div class="photo-wrapper">
             <img
@@ -69,53 +49,75 @@
 
           <div class="profile-details">
             <h1 class="title">
-              <span class="greeting-row">Olá, eu sou</span>
-              <span class="name" id="profile-name">Sidemar Schimmelpfennig<br />Junior</span>
+              Olá, eu sou <span id="profile-name">Sidemar Schimmelpfennig Junior</span>
             </h1>
 
-            <div class="information">
-              <p class="info-item info-job">
-                <img
-                  src="./assets/img/icons/job.svg"
-                  alt="Profissão"
-                  class="info-icon"
-                />
-                <span id="profile-job">Assistente administrativo - Prefeitura Municipal de Arabutã</span>
-              </p>
-              <p class="info-item info-location">
-                <img
-                  src="./assets/img/icons/location.svg"
-                  alt="Localização"
-                  class="info-icon"
-                />
-                <span id="profile-location">Arabutã - SC</span>
-              </p>
-              <p class="info-item info-phone">
-                <img
-                  src="./assets/img/icons/phone.svg"
-                  alt="WhatsApp"
-                  class="info-icon"
-                />
-                <a
-                  id="profile-phone"
-                  href="https://wa.me/554998110169"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >WhatsApp</a
-                >
-              </p>
-              <p class="info-item info-email">
-                <img
-                  src="./assets/img/icons/email.svg"
-                  alt="E-mail"
-                  class="info-icon"
-                />
-                <a
-                  id="profile-email"
-                  href="mailto:sidemarschimmelpfennig@outlook.com"
-                  >sidemarschimmelpfennig@outlook.com</a
-                >
-              </p>
+            <p class="profile-role-location">
+              <svg class="role-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+              <span id="profile-job">Assistente Administrativo - Prefeitura Municipal de Arabutã</span>
+              <span class="bullet-sep">•</span>
+              <span id="profile-location">Arabutã - SC</span>
+            </p>
+
+            <!-- Botão de Baixar Currículo em destaque -->
+            <a
+              href="https://drive.google.com/file/d/1O6A1CUZq08TJ78s7km2AlBf2hLpJqQcg/view?usp=sharing"
+              class="btn-download-cv"
+              id="download"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Baixar Currículo"
+            >
+              <img
+                src="./assets/img/icons/download-cur.svg"
+                alt="Baixar Currículo"
+                class="btn-cv-icon"
+              />
+              <span>Baixar Currículo</span>
+            </a>
+
+            <!-- Barra de Ações Sociais Rápidas -->
+            <div class="social-actions-bar">
+              <a
+                id="profile-phone"
+                href="https://wa.me/554998110169"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                title="WhatsApp"
+              >
+                <img src="./assets/img/icons/phone.svg" alt="WhatsApp" />
+              </a>
+              <a
+                id="profile-email"
+                href="mailto:sidemarschimmelpfennig@outlook.com"
+                class="social-btn"
+                title="E-mail"
+              >
+                <img src="./assets/img/icons/email.svg" alt="E-mail" />
+              </a>
+              <a
+                id="profile-github"
+                href="https://github.com/sidemarschimmelpfennig"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                title="GitHub"
+              >
+                <img src="./assets/img/icons/github.svg" alt="GitHub" />
+              </a>
+              <a
+                id="profile-linkedin"
+                href="https://www.linkedin.com/in/sidemar-schimmelpfennig-junior/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-btn"
+                title="LinkedIn"
+              >
+                <img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" />
+              </a>
             </div>
           </div>
         </div>
@@ -130,13 +132,107 @@
           <div class="skills-pills" id="profile-Hard">
             <span class="skill-pill"><img src="./data/img/delphi.svg" alt="Delphi" class="skill-icon" /> Delphi</span>
             <span class="skill-pill"><img src="./data/img/nodejs.svg" alt="Node.js" class="skill-icon" /> Node.js</span>
+            <span class="skill-pill"><img src="./data/img/git.svg" alt="Git" class="skill-icon" /> Git</span>
             <span class="skill-pill"><img src="./data/img/vuejs.svg" alt="Vue.js" class="skill-icon" /> Vue.js</span>
             <span class="skill-pill"><img src="./data/img/js.svg" alt="JavaScript" class="skill-icon" /> JavaScript</span>
             <span class="skill-pill"><img src="./data/img/mysql.svg" alt="MySQL" class="skill-icon" /> MySQL</span>
-            <span class="skill-pill"><img src="./data/img/git.svg" alt="Git" class="skill-icon" /> Git</span>
             <span class="skill-pill"><img src="./data/img/python.svg" alt="Python" class="skill-icon" /> Python</span>
             <span class="skill-pill"><img src="./data/img/typescript.svg" alt="TypeScript" class="skill-icon" /> TypeScript</span>
             <span class="skill-pill"><img src="./data/img/codeigniter.svg" alt="CodeIgniter" class="skill-icon" /> CodeIgniter</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Projetos em Destaque (posicionado antes de Idiomas) -->
+      <section class="card-section">
+        <div class="section-header">
+          <h2>Projetos em Destaque</h2>
+        </div>
+        <div class="section-content">
+          <div class="projects-grid" id="profile-Projects">
+            <!-- Projeto 1: Sistema ERP Básico -->
+            <div class="project-card">
+              <div class="project-mockup">
+                <div class="project-mockup-dots">
+                  <span class="mockup-dot dot-red"></span>
+                  <span class="mockup-dot dot-yellow"></span>
+                  <span class="mockup-dot dot-green"></span>
+                </div>
+                <img src="./data/img/delphi.svg" alt="Delphi" class="project-mockup-icon" />
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Sistema Erp Basico (Delphi)</h3>
+                <p class="project-desc">Desenvolvido em Delphi e Banco de Dados MySQL.</p>
+                <div class="project-tags">
+                  <span class="project-mini-tag"><img src="./data/img/delphi.svg" alt="Delphi" /> Delphi</span>
+                  <span class="project-mini-tag"><img src="./data/img/mysql.svg" alt="MySQL" /> MySQL</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sidemarschimmelpfennig/sistema_erp_basico" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
+                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://github.com/sidemarschimmelpfennig/sistema_erp_basico" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
+                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Projeto 2: Zé do Hambúrguer -->
+            <div class="project-card">
+              <div class="project-mockup">
+                <div class="project-mockup-dots">
+                  <span class="mockup-dot dot-red"></span>
+                  <span class="mockup-dot dot-yellow"></span>
+                  <span class="mockup-dot dot-green"></span>
+                </div>
+                <img src="./data/img/react.svg" alt="React" class="project-mockup-icon" />
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Zé do Hamburguer (React ts)</h3>
+                <p class="project-desc">Desenvolvido em React com TypeScript.</p>
+                <div class="project-tags">
+                  <span class="project-mini-tag"><img src="./data/img/react.svg" alt="React" /> React</span>
+                  <span class="project-mini-tag"><img src="./data/img/typescript.svg" alt="TypeScript" /> TS</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
+                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
+                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
+                </a>
+              </div>
+            </div>
+
+            <!-- Projeto 3: Placar Municipal de Arabutã -->
+            <div class="project-card">
+              <div class="project-mockup">
+                <div class="project-mockup-dots">
+                  <span class="mockup-dot dot-red"></span>
+                  <span class="mockup-dot dot-yellow"></span>
+                  <span class="mockup-dot dot-green"></span>
+                </div>
+                <img src="./data/img/python.svg" alt="Python" class="project-mockup-icon" />
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Placar Municipal de Arabutã (Python)</h3>
+                <p class="project-desc">Placar Futsal Desktop desenvolvido em Python com PyQt5, arquitetura Dual Monitor e VLC.</p>
+                <div class="project-tags">
+                  <span class="project-mini-tag"><img src="./data/img/python.svg" alt="Python" /> Python</span>
+                  <span class="project-mini-tag"><img src="./data/img/python.svg" alt="PyQt5" /> PyQt5</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/sidemarschimmelpfennig/placar-futsal-desktop" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
+                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://github.com/sidemarschimmelpfennig/placar-futsal-desktop" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
+                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -155,48 +251,15 @@
               </div>
             </div>
             <div class="language-item">
-              <span class="language-name">Alemão (Básico)</span>
+              <span class="language-name">Alemão(Básico)</span>
               <div class="language-bar-track">
                 <div class="language-bar-fill" style="width: 45%;"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Meus Projetos -->
-      <section class="card-section">
-        <div class="section-header">
-          <h2>Meus Projetos</h2>
-        </div>
-        <div class="section-content">
-          <div class="projects-grid" id="profile-Projects">
-            <div class="project-card">
-              <div>
-                <h3 class="project-title">Sistema Erp Basico (Delphi)</h3>
-                <p class="project-desc">Desenvolvido em Delphi e Banco de Dados MySQL.</p>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/sidemarschimmelpfennig/sistema_erp_basico" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
-                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
-                </a>
-                <a href="https://github.com/sidemarschimmelpfennig/sistema_erp_basico" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
-                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
-                </a>
-              </div>
-            </div>
-            <div class="project-card">
-              <div>
-                <h3 class="project-title">Zé do Hamburguer (React ts)</h3>
-                <p class="project-desc">Desenvolvido em React com TypeScript.</p>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
-                  <img src="./assets/img/icons/github.svg" alt="GitHub" />
-                </a>
-                <a href="https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Abrir Projeto">
-                  <img src="./assets/img/icons/link.svg" alt="Link do Projeto" />
-                </a>
+            <div class="language-item">
+              <span class="language-name">Inglês (Em estudo)</span>
+              <div class="language-bar-track">
+                <div class="language-bar-fill" style="width: 20%;"></div>
               </div>
             </div>
           </div>
@@ -216,13 +279,13 @@
                 <h3 class="timeline-company">Prefeitura Municipal de Arabutã</h3>
                 <span class="timeline-role">Assistente administrativo</span>
                 <span class="timeline-period">jun. de 2025 - o momento</span>
-                <p class="timeline-desc">Atuação como Assistente administrativo em tempo integral na Prefeitura Municipal de Arabutã.</p>
+                <p class="timeline-desc">Atuação nas rotinas e atividades de assistência administrativa, além de atuação por meio de câmara técnica no desenvolvimento de marketplace em CodeIgniter, Vue.js e banco MariaDB, criação de API REST, desenvolvimento de projetos em Python e ajustes no site de turismo com WordPress.</p>
               </div>
             </li>
             <li class="timeline-item">
               <div class="timeline-dot" aria-hidden="true"></div>
               <div class="timeline-content">
-                <h3 class="timeline-company">SGBr® Sistemas</h3>
+                <h3 class="timeline-company">SGBR Sistemas</h3>
                 <span class="timeline-role">Suporte técnico II</span>
                 <span class="timeline-period">abr. de 2024 - jun. de 2025</span>
                 <p class="timeline-desc">Suporte técnico especializado em sistemas, resolução de chamados e atendimento ao cliente.</p>

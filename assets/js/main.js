@@ -10,12 +10,7 @@ const profileInformation = (profileData) => {
     // Nome
     const name = document.getElementById('profile-name');
     if (name && profileData.name) {
-        const cleanName = profileData.name.trim();
-        if (/schimmelpfennig/i.test(cleanName)) {
-            name.innerHTML = 'Sidemar Schimmelpfennig<br />Junior';
-        } else {
-            name.innerHTML = cleanName;
-        }
+        name.innerHTML = profileData.name.trim();
     }
 
     // Cargo / Job
@@ -33,17 +28,26 @@ const profileInformation = (profileData) => {
     // Telefone / WhatsApp
     const phone = document.getElementById('profile-phone');
     if (phone && profileData.phone) {
-        phone.innerHTML = 'WhatsApp';
         phone.href = profileData.phone.replace('www.', '');
     }
 
     // E-mail
     const email = document.getElementById('profile-email');
     if (email && profileData.email) {
-        const emailAddress = typeof profileData.email === 'object' ? profileData.email.name : profileData.email;
         const emailHref = typeof profileData.email === 'object' ? profileData.email.href : `mailto:${profileData.email}`;
-        email.innerHTML = emailAddress;
         email.href = emailHref;
+    }
+
+    // GitHub
+    const github = document.getElementById('profile-github');
+    if (github && (profileData.github || profileData.git)) {
+        github.href = profileData.github || profileData.git;
+    }
+
+    // LinkedIn
+    const linkedin = document.getElementById('profile-linkedin');
+    if (linkedin && profileData.linkedin) {
+        linkedin.href = profileData.linkedin;
     }
 
     // Link do Currículo
@@ -78,9 +82,24 @@ const profileLanguages = (profileData) => {
     if (!container) return;
 
     container.innerHTML = profileData.languages.map(lang => {
-        const isNative = /portugu[eê]s/i.test(lang);
-        const percent = isNative ? 100 : 45;
-        const label = isNative ? 'Português (Nativo)' : lang;
+        let label = typeof lang === 'object' ? lang.name : lang;
+        let percent = 45;
+
+        const langLower = label.toLowerCase();
+        if (/portugu[eê]s/i.test(langLower) || /nativo/i.test(langLower)) {
+            percent = 100;
+            label = 'Português (Nativo)';
+        } else if (/alem[aã]o/i.test(langLower) || /b[aá]sico/i.test(langLower)) {
+            percent = 45;
+            label = 'Alemão (Básico)';
+        } else if (/ingl[eê]s/i.test(langLower) || /estudo/i.test(langLower)) {
+            percent = 20;
+            label = 'Inglês (Em estudo)';
+        }
+
+        if (typeof lang === 'object' && lang.percent) {
+            percent = lang.percent;
+        }
 
         return `
         <div class="language-item">
@@ -98,19 +117,76 @@ const profileProjects = (profileData) => {
     const container = document.getElementById('profile-Projects');
     if (!container) return;
 
-    container.innerHTML = profileData.portfolio.map(project => {
-        let desc = 'Projeto completo desenvolvido com boas práticas e código limpo.';
-        if (project.name.toLowerCase().includes('delphi')) {
-            desc = 'Desenvolvido em Delphi e Banco de Dados MySQL.';
-        } else if (project.name.toLowerCase().includes('react')) {
-            desc = 'Desenvolvido em React com TypeScript.';
+    const portfolioList = [...profileData.portfolio];
+    const hasPlacar = portfolioList.some(p => (p.name || '').toLowerCase().includes('placar') || (p.url || '').includes('placar-futsal-desktop'));
+    if (!hasPlacar) {
+        portfolioList.push({
+            name: "Placar Municipal de Arabutã (Python)",
+            url: "https://github.com/sidemarschimmelpfennig/placar-futsal-desktop",
+            github: true,
+            description: "Placar Futsal Desktop desenvolvido em Python com PyQt5, arquitetura Dual Monitor e VLC.",
+            tech: [
+                { name: "Python", logo: "./data/img/python.svg" },
+                { name: "PyQt5", logo: "./data/img/python.svg" }
+            ]
+        });
+    }
+
+    container.innerHTML = portfolioList.map(project => {
+        const nameLower = (project.name || '').toLowerCase();
+        let desc = project.description;
+        if (!desc) {
+            if (nameLower.includes('delphi')) {
+                desc = 'Desenvolvido em Delphi e Banco de Dados MySQL.';
+            } else if (nameLower.includes('react')) {
+                desc = 'Desenvolvido em React com TypeScript.';
+            } else if (nameLower.includes('python') || nameLower.includes('placar') || nameLower.includes('arabutã')) {
+                desc = 'Placar Futsal Desktop desenvolvido em Python com PyQt5, arquitetura Dual Monitor e VLC.';
+            } else {
+                desc = 'Projeto completo desenvolvido com boas práticas e código limpo.';
+            }
+        }
+
+        // Mockup icon selector
+        let mockupIcon = './data/img/js.svg';
+        if (nameLower.includes('delphi')) mockupIcon = './data/img/delphi.svg';
+        else if (nameLower.includes('react')) mockupIcon = './data/img/react.svg';
+        else if (nameLower.includes('python') || nameLower.includes('placar')) mockupIcon = './data/img/python.svg';
+
+        // Tech tags
+        let tagsHtml = '';
+        if (Array.isArray(project.tech)) {
+            tagsHtml = project.tech.map(t => {
+                const tName = typeof t === 'object' ? t.name : t;
+                const tLogo = typeof t === 'object' ? t.logo : '';
+                return `<span class="project-mini-tag">${tLogo ? `<img src="${tLogo}" alt="${tName}" />` : ''} ${tName}</span>`;
+            }).join('');
+        } else {
+            if (nameLower.includes('delphi')) {
+                tagsHtml = `<span class="project-mini-tag"><img src="./data/img/delphi.svg" alt="Delphi" /> Delphi</span><span class="project-mini-tag"><img src="./data/img/mysql.svg" alt="MySQL" /> MySQL</span>`;
+            } else if (nameLower.includes('react')) {
+                tagsHtml = `<span class="project-mini-tag"><img src="./data/img/react.svg" alt="React" /> React</span><span class="project-mini-tag"><img src="./data/img/typescript.svg" alt="TS" /> TS</span>`;
+            } else if (nameLower.includes('python') || nameLower.includes('placar')) {
+                tagsHtml = `<span class="project-mini-tag"><img src="./data/img/python.svg" alt="Python" /> Python</span><span class="project-mini-tag"><img src="./data/img/python.svg" alt="PyQt5" /> PyQt5</span>`;
+            }
         }
 
         return `
         <div class="project-card">
-            <div>
+            <div class="project-mockup">
+                <div class="project-mockup-dots">
+                    <span class="mockup-dot dot-red"></span>
+                    <span class="mockup-dot dot-yellow"></span>
+                    <span class="mockup-dot dot-green"></span>
+                </div>
+                <img src="${mockupIcon}" alt="${project.name}" class="project-mockup-icon" />
+            </div>
+            <div class="project-card-body">
                 <h3 class="project-title">${project.name}</h3>
                 <p class="project-desc">${desc}</p>
+                <div class="project-tags">
+                    ${tagsHtml}
+                </div>
             </div>
             <div class="project-actions">
                 <a href="${project.url}" target="_blank" rel="noopener noreferrer" class="project-action-link" title="Repositório no GitHub">
