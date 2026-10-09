@@ -72,13 +72,15 @@
       ]
     },
     {
-      "name": "Zé do Hamburguer (React ts)",
-      "url": "https://github.com/sidemarschimmelpfennig/ze_do_hamburguer_app",
+      "name": "Marketplatz",
+      "url": "https://github.com/sidemarschimmelpfennig/marketplatz_ecommerce",
       "github": true,
-      "description": "Desenvolvido em React com TypeScript.",
+      "description": "Marketplace e PDV municipal para produtores e artesãos de Arabutã. Atuação no front-end em Vue 3, backend em CodeIgniter 4 e app móvel em React Native.",
+      "image": "./assets/img/marketplatz.jpg",
       "tech": [
-        { "name": "React", "logo": "./data/img/react.svg" },
-        { "name": "TypeScript", "logo": "./data/img/typescript.svg" }
+        { "name": "Vue 3", "logo": "./data/img/vuejs.svg" },
+        { "name": "CodeIgniter 4", "logo": "./data/img/codeigniter.svg" },
+        { "name": "React Native", "logo": "./data/img/react.svg" }
       ]
     },
     {

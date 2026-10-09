@@ -138,6 +138,8 @@ const profileProjects = (profileData) => {
         if (!desc) {
             if (nameLower.includes('delphi')) {
                 desc = 'Desenvolvido em Delphi e Banco de Dados MySQL.';
+            } else if (nameLower.includes('marketplatz')) {
+                desc = 'Marketplace e PDV municipal para produtores e artesãos de Arabutã. Atuação no front-end em Vue 3, backend em CodeIgniter 4 e app móvel em React Native.';
             } else if (nameLower.includes('react')) {
                 desc = 'Desenvolvido em React com TypeScript.';
             } else if (nameLower.includes('python') || nameLower.includes('placar') || nameLower.includes('arabutã')) {
@@ -150,6 +152,7 @@ const profileProjects = (profileData) => {
         // Mockup icon selector
         let mockupIcon = './data/img/js.svg';
         if (nameLower.includes('delphi')) mockupIcon = './data/img/delphi.svg';
+        else if (nameLower.includes('marketplatz') || nameLower.includes('vue')) mockupIcon = './data/img/vuejs.svg';
         else if (nameLower.includes('react')) mockupIcon = './data/img/react.svg';
         else if (nameLower.includes('python') || nameLower.includes('placar')) mockupIcon = './data/img/python.svg';
 
@@ -164,12 +167,16 @@ const profileProjects = (profileData) => {
         } else {
             if (nameLower.includes('delphi')) {
                 tagsHtml = `<span class="project-mini-tag"><img src="./data/img/delphi.svg" alt="Delphi" /> Delphi</span><span class="project-mini-tag"><img src="./data/img/mysql.svg" alt="MySQL" /> MySQL</span>`;
+            } else if (nameLower.includes('marketplatz')) {
+                tagsHtml = `<span class="project-mini-tag"><img src="./data/img/vuejs.svg" alt="Vue 3" /> Vue 3</span><span class="project-mini-tag"><img src="./data/img/codeigniter.svg" alt="CodeIgniter 4" /> CodeIgniter 4</span><span class="project-mini-tag"><img src="./data/img/react.svg" alt="React Native" /> React Native</span>`;
             } else if (nameLower.includes('react')) {
                 tagsHtml = `<span class="project-mini-tag"><img src="./data/img/react.svg" alt="React" /> React</span><span class="project-mini-tag"><img src="./data/img/typescript.svg" alt="TS" /> TS</span>`;
             } else if (nameLower.includes('python') || nameLower.includes('placar')) {
                 tagsHtml = `<span class="project-mini-tag"><img src="./data/img/python.svg" alt="Python" /> Python</span><span class="project-mini-tag"><img src="./data/img/python.svg" alt="PyQt5" /> PyQt5</span>`;
             }
         }
+
+        const projectCoverImg = project.image || (nameLower.includes('marketplatz') ? './assets/img/marketplatz.jpg' : null);
 
         return `
         <div class="project-card">
@@ -179,7 +186,7 @@ const profileProjects = (profileData) => {
                     <span class="mockup-dot dot-yellow"></span>
                     <span class="mockup-dot dot-green"></span>
                 </div>
-                <img src="${mockupIcon}" alt="${project.name}" class="project-mockup-icon" />
+                ${projectCoverImg ? `<img src="${projectCoverImg}" alt="${project.name}" class="project-mockup-cover" />` : `<img src="${mockupIcon}" alt="${project.name}" class="project-mockup-icon" />`}
             </div>
             <div class="project-card-body">
                 <h3 class="project-title">${project.name}</h3>
