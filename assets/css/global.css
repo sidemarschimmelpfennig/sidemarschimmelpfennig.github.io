@@ -81,7 +81,7 @@ a:hover {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 800px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 1.75rem 2.25rem 2rem 2.25rem;
     background: var(--card-bg);

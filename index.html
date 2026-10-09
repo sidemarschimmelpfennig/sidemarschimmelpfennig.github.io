@@ -38,30 +38,34 @@
     <main class="main">
       <header class="header">
         <div class="profile-card">
-          <div class="photo-wrapper">
-            <img
-              id="profile-photo"
-              src="./assets/img/my-photo.png"
-              alt="Foto de perfil de Sidemar Schimmelpfennig Junior"
-              class="photo"
-            />
+          <div class="profile-info-group">
+            <div class="photo-wrapper">
+              <img
+                id="profile-photo"
+                src="./assets/img/my-photo.png"
+                alt="Foto de perfil de Sidemar Schimmelpfennig Junior"
+                class="photo"
+              />
+            </div>
+
+            <div class="profile-details">
+              <h1 class="title">
+                Olá, eu sou <span id="profile-name">Sidemar Schimmelpfennig Junior</span>
+              </h1>
+
+              <p class="profile-role-location">
+                <svg class="role-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span id="profile-job">Assistente Administrativo - Prefeitura Municipal de Arabutã</span>
+                <span class="bullet-sep">•</span>
+                <span id="profile-location">Arabutã - SC</span>
+              </p>
+            </div>
           </div>
 
-          <div class="profile-details">
-            <h1 class="title">
-              Olá, eu sou <span id="profile-name">Sidemar Schimmelpfennig Junior</span>
-            </h1>
-
-            <p class="profile-role-location">
-              <svg class="role-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-              <span id="profile-job">Assistente Administrativo - Prefeitura Municipal de Arabutã</span>
-              <span class="bullet-sep">•</span>
-              <span id="profile-location">Arabutã - SC</span>
-            </p>
-
-            <!-- Botão de Baixar Currículo em destaque -->
+          <!-- Ações do Perfil: Baixar Currículo e Redes Sociais -->
+          <div class="profile-actions-group">
             <a
               href="https://drive.google.com/file/d/1O6A1CUZq08TJ78s7km2AlBf2hLpJqQcg/view?usp=sharing"
               class="btn-download-cv"
