@@ -125,6 +125,7 @@ const profileProjects = (profileData) => {
             url: "https://github.com/sidemarschimmelpfennig/placar-futsal-desktop",
             github: true,
             description: "Placar Futsal Desktop desenvolvido em Python com PyQt5, arquitetura Dual Monitor e VLC.",
+            image: "./assets/img/placar.png",
             tech: [
                 { name: "Python", logo: "./data/img/python.svg" },
                 { name: "PyQt5", logo: "./data/img/python.svg" }
@@ -176,7 +177,9 @@ const profileProjects = (profileData) => {
             }
         }
 
-        const projectCoverImg = project.image || (nameLower.includes('marketplatz') ? './assets/img/marketplatz.jpg' : null);
+        const projectCoverImg = project.image || 
+            (nameLower.includes('marketplatz') ? './assets/img/marketplatz.jpg' : 
+            (nameLower.includes('placar') ? './assets/img/placar.png' : null));
 
         return `
         <div class="project-card">

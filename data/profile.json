@@ -84,10 +84,11 @@
       ]
     },
     {
-      "name": "Placar Municipal de Arabutã (Python)",
+      "name": "Placar Municipal de Arabutã",
       "url": "https://github.com/sidemarschimmelpfennig/placar-futsal-desktop",
       "github": true,
       "description": "Placar Futsal Desktop desenvolvido em Python com PyQt5, arquitetura de tela dupla (Dual Monitor para operador e telão) e integração nativa ao VLC Media Player.",
+      "image": "./assets/img/placar.png",
       "tech": [
         { "name": "Python", "logo": "./data/img/python.svg" },
         { "name": "PyQt5", "logo": "./data/img/python.svg" }
