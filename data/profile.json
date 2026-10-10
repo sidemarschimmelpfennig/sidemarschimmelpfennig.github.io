@@ -104,17 +104,17 @@
     {
       "name": "Suporte técnico II / SGBR Sistemas",
       "period": "abr. de 2024 - jun. de 2025",
-      "description": "Suporte técnico especializado em sistemas, resolução de chamados e atendimento ao cliente."
+      "description": "Suporte técnico nível 2 a clientes e revendas via acesso remoto, WhatsApp, chat e telefone. Atuação em instalação de sistemas, correção de erros, diagnóstico de causa-raiz e reporte detalhado de cards ao time de desenvolvimento. Manipulação de bancos de dados (Firebird e MariaDB) com criação de consultas SQL e relatórios personalizados."
     },
     {
-      "name": "Desenvolvedor Delphi / Coffcode Sistemas",
+      "name": "Desenvolvedor Delphi / CoffCode Sistemas",
       "period": "ago. de 2022 - nov. de 2023",
-      "description": "Desenvolvimento e Manutençao de sistema de automação comercial."
+      "description": "Desenvolvimento e evolução de software de automação comercial em Delphi. Atuação no ciclo completo desde análise de requisitos até a entrega, investigação e correção de bugs em produção, testes funcionais e controle de versão com Git (merges, rotinas de integração e equipe)."
     },
     {
       "name": "Suporte técnico / Prodo Sistemas",
       "period": "nov. de 2021 - fev. de 2022",
-      "description": "Comunicação e atendimento ao cliente no suporte a sistemas."
+      "description": "Atendimento e suporte técnico a usuários com elaboração de instruções e procedimentos de uso. Diagnóstico, reprodução e reporte de bugs ao time de desenvolvimento, além de operações em banco de dados com uso exclusivo de Firebird."
     }
   ]
 }
